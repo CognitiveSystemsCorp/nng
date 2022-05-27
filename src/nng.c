@@ -47,6 +47,14 @@ nng_close(nng_socket s)
 }
 
 int
+nng_close_ptr(nng_socket * s)
+{
+    return nng_close(*s);
+}
+
+
+
+int
 nng_socket_id(nng_socket s)
 {
 	return (((int) s.id > 0) ? (int) s.id : -1);

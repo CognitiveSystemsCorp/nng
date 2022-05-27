@@ -210,6 +210,7 @@ NNG_DECL void nng_fini(void);
 // closing any underlying connections and releasing any associated
 // resources.
 NNG_DECL int nng_close(nng_socket);
+NNG_DECL int nng_close_ptr(nng_socket *);
 
 // nng_socket_id returns the positive socket id for the socket, or -1
 // if the socket is not valid.
